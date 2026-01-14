@@ -5,16 +5,20 @@ namespace WeatherPattern.Event;
 
 public static class TypeSelector
 {
-    public static async Task<List<Weather>> ReadAsync(string file)
+    private static IReader<Weather> SelectReader(string file)
     {
         var type = file.Split('.').Last();
-        IReader<Weather> reader = type switch
+        return type switch
         {
             "json" => new JsonReader(),
             "xml" => new XmlReader(),
             _ => throw new InvalidDataException("Invalid data type")
         };
+    }
 
+    public static async Task<List<Weather>> ReadAsync(string file)
+    {
+        var reader = SelectReader(file);
         var weather = await reader.ReadAsync(file);
         return weather;
     }
