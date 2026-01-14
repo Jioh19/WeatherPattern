@@ -17,7 +17,7 @@ public class EventManager(List<Weather> weathers, List<NameBot> bots)
         UpdateBots(_bots);
         _weathers.ForEach(w =>
         {
-            Console.WriteLine($"Checking {w.Location}");
+            Console.WriteLine($"\nChecking {w.Location}");
             foreach (var entry in _bots)
             {
                 var name = entry.Name;
