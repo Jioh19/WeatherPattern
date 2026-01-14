@@ -24,6 +24,9 @@ try
         Console.WriteLine($"Name: {entry.Name}");
         Console.WriteLine($"Bot: {entry.Bot}");
     }
+    
+    var eventManager = new EventManager(weather, bots);
+    eventManager.Report();
 }
 catch (Exception e)
 {

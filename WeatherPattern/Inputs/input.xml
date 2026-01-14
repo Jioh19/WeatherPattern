@@ -16,7 +16,7 @@
   </Weather>
   <Weather>
     <Location>Sydney</Location>
-    <Temperature>25.1</Temperature>
+    <Temperature>35.1</Temperature>
     <Humidity>55.3</Humidity>
   </Weather>
   <Weather>
@@ -31,7 +31,7 @@
   </Weather>
   <Weather>
     <Location>Moscow</Location>
-    <Temperature>12.4</Temperature>
+    <Temperature>-2.4</Temperature>
     <Humidity>65.0</Humidity>
   </Weather>
   <Weather>
