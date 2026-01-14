@@ -1,0 +1,53 @@
+﻿<WeatherData>
+  <Weather>
+    <Location>New York</Location>
+    <Temperature>22.5</Temperature>
+    <Humidity>60.2</Humidity>
+  </Weather>
+  <Weather>
+    <Location>London</Location>
+    <Temperature>18.3</Temperature>
+    <Humidity>75.0</Humidity>
+  </Weather>
+  <Weather>
+    <Location>Tokyo</Location>
+    <Temperature>27.8</Temperature>
+    <Humidity>68.5</Humidity>
+  </Weather>
+  <Weather>
+    <Location>Sydney</Location>
+    <Temperature>25.1</Temperature>
+    <Humidity>55.3</Humidity>
+  </Weather>
+  <Weather>
+    <Location>Paris</Location>
+    <Temperature>19.7</Temperature>
+    <Humidity>72.4</Humidity>
+  </Weather>
+  <Weather>
+    <Location>Berlin</Location>
+    <Temperature>17.2</Temperature>
+    <Humidity>80.1</Humidity>
+  </Weather>
+  <Weather>
+    <Location>Moscow</Location>
+    <Temperature>12.4</Temperature>
+    <Humidity>65.0</Humidity>
+  </Weather>
+  <Weather>
+    <Location>Rio de Janeiro</Location>
+    <Temperature>29.3</Temperature>
+    <Humidity>70.8</Humidity>
+  </Weather>
+  <Weather>
+    <Location>Cape Town</Location>
+    <Temperature>21.6</Temperature>
+    <Humidity>58.9</Humidity>
+  </Weather>
+  <Weather>
+    <Location>Toronto</Location>
+    <Temperature>16.8</Temperature>
+    <Humidity>63.5</Humidity>
+  </Weather>
+</WeatherData>
+

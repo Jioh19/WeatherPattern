@@ -5,7 +5,7 @@ namespace WeatherPattern.Event;
 
 public static class TypeSelector
 {
-    public static async Task<Weather> ReadAsync(string file)
+    public static async Task<List<Weather>> ReadAsync(string file)
     {
         var type = file.Split('.').Last();
         IReader<Weather> reader = type switch

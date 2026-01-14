@@ -2,5 +2,5 @@
 
 public interface IReader<T>
 {
-    Task<T> ReadAsync(string filePath);
+    Task<List<T>> ReadAsync(string filePath);
 }
