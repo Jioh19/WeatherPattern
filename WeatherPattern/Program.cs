@@ -8,6 +8,10 @@ try
     var weather = await TypeSelector.ReadAsync(PathParser.GetPath("input.json"));
     Console.WriteLine("JSON data:");
     weather.ForEach(Console.WriteLine);
+    
+    weather = await TypeSelector.ReadAsync(PathParser.GetPath("input.xml"));
+    Console.WriteLine("\nXML data:");
+    weather.ForEach(Console.WriteLine);
 }
 catch (Exception e)
 {
