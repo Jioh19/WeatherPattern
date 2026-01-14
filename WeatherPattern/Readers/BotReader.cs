@@ -3,15 +3,8 @@ using WeatherPattern.Models;
 
 namespace WeatherPattern.Readers;
 
-public class BotReader : IReader<BotReader.NameBot>
+public class BotReader : IReader<NameBot>
 {
-    public struct NameBot
-    {
-        public string Name;
-        public Bot Bot;
-        
-    }
-
     public async Task<List<NameBot>> ReadAsync(string filePath)
     {
         var jsonString = await File.ReadAllTextAsync(filePath);

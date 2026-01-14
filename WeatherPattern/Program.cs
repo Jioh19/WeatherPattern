@@ -19,7 +19,7 @@ try
     var bots = await botReader.ReadAsync(PathParser.GetPath("bots.json"));
 
     Console.WriteLine("\nBots:");
-    foreach (var entry in bots)
+    foreach (var entry in BotSelector.SelectBot(bots))
     {
         Console.WriteLine($"Name: {entry.Name}");
         Console.WriteLine($"Bot: {entry.Bot}");
