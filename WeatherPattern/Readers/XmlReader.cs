@@ -13,7 +13,10 @@ public class XmlReader : IReader<Weather>
         using var reader = System.Xml.XmlReader.Create(filePath, settings);
         while (await reader.ReadAsync())
         {
-            if (reader.NodeType != XmlNodeType.Element || reader.Name != "Weather") continue;
+            if (reader.NodeType != XmlNodeType.Element || reader.Name != "Weather")
+            {
+                continue;
+            }
             string? location = null;
             decimal? temperature = null;
             decimal? humidity = null;
@@ -21,7 +24,9 @@ public class XmlReader : IReader<Weather>
             while (await reader.ReadAsync())
             {
                 if (reader is { NodeType: XmlNodeType.EndElement, Name: "Weather" })
+                {
                     break;
+                }
 
                 if (reader.NodeType == XmlNodeType.Element)
                 {

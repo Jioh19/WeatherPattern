@@ -9,11 +9,19 @@ public static class PathParser
         var riderPath = Path.Combine(Directory.GetParent(Environment.CurrentDirectory)?.Parent?.Parent?.Parent?.FullName ?? "", "WeatherPattern", "Inputs", fileName);
 
         if (File.Exists(directPath))
+        {
             return directPath;
+        }
+
         if (File.Exists(consolePath))
+        {
             return consolePath;
+        }
+
         if (File.Exists(riderPath))
+        {
             return riderPath;
+        }
     
         throw new FileNotFoundException($"File not found in either expected location: {directPath}, {consolePath} nor {riderPath}");
     }

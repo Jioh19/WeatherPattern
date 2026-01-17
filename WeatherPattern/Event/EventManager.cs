@@ -9,7 +9,7 @@ public class EventManager(List<Weather> weathers, List<NameBot> bots)
 
     private void UpdateBots(List<NameBot> bots)
     {
-        this._bots = BotSelector.SelectBot(bots);
+        this._bots = bots.Where(x => x.Bot.Enabled).ToList();
     }
 
     public void Report()

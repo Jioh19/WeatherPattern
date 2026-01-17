@@ -18,10 +18,16 @@ public static class ConsoleMenu
             {
                 Console.WriteLine("Input weather file: (input.json - input.xml)");
                 var weatherFile = Console.ReadLine();
-                if (string.IsNullOrWhiteSpace(weatherFile)) continue;
+                if (string.IsNullOrWhiteSpace(weatherFile))
+                {
+                    continue;
+                }
                 weather = await TypeSelector.ReadAsync(PathParser.GetPath(weatherFile));
                 Console.WriteLine($"Found {weather.Count} weather entries");
-                if (weather.Count > 0) break;
+                if (weather.Count > 0)
+                {
+                    break;
+                }
             }
             catch (Exception ex)
             {
@@ -37,7 +43,10 @@ public static class ConsoleMenu
                 Console.WriteLine("Reading bot file bots.json");
                 bots = await botReader.ReadAsync(PathParser.GetPath("bots.json"));
                 Console.WriteLine($"Found {bots.Count} bots");
-                if (bots.Count > 0) break;
+                if (bots.Count > 0)
+                {
+                    break;
+                }
             }
             catch (Exception ex)
             {
